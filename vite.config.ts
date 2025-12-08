@@ -5,6 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  base: '/saynode',
   build: {
     // Increase warning threshold (kilobytes). Adjust to taste.
     chunkSizeWarningLimit: 1000, // 1000kb = 1MB
