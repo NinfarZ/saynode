@@ -7,7 +7,7 @@ import LazyOnView from "./components/lazyOnView/LazyOnView";
 const Graph = lazy(() => import("./components/graph/Graph"));
 
 function App() {
-  const base = import.meta.env.BASE_URL;
+  const base = import.meta.env.VITE_BASE_PATH || '/saynode/';
 
   const files = [
     {
